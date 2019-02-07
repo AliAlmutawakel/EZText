@@ -1,6 +1,7 @@
-<body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
-</body>
+<mat-toolbar class="mat-elevation-z2" color="primary">
+  EZText
+  <button mat-button class="mx-2 ml-4" [routerLink]="['/campaigns']">Campaigns</button>
+  <button mat-button class="mx-2" [routerLink]="['/contacts']">Contacts</button>
+  <button mat-icon-button class="ml-auto"><mat-icon>settings</mat-icon></button>
+</mat-toolbar>
+<router-outlet></router-outlet>
